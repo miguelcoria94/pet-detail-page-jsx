@@ -2,6 +2,7 @@ import React from 'react';
 import PetInformationItem from './PetInformationItem';
 
 
+
 const PetDetailList = props =>
     <>
         <h2>Details</h2>

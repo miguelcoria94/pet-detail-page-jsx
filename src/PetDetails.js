@@ -1,10 +1,19 @@
 import React from "react";
+
 import PetDetailList from "./PetDetailList.js";
+import OwnersList from './OwnersList'
 
 const PetDetails = props =>
-    <div>
+    <>
         <PetDetailList pet={props.pet} />
-    </div>
+        <OwnersList owners={props.pet.Owners} />
+    </>
     ;
+
+PetDetails.defaultProps = {
+    pet: {
+        PetType: {},
+    },
+};
 
 export default PetDetails
